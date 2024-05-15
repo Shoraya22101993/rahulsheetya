@@ -5,9 +5,9 @@
     <classes>
       <class name="Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest">
         <methods>
-          <include name="Producterrorvalidation"/>
           <include name="teardown"/>
           <include name="launchapp"/>
+          <include name="LoginErrorValidation"/>
         </methods>
       </class> <!-- Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest -->
     </classes>

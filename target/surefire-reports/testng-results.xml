@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-02T00:25:26 IST" name="Failed suite [Failed suite [Suite]]" finished-at="2024-04-02T00:25:49 IST" duration-ms="23291">
+  <suite started-at="2024-05-15T17:23:23 IST" name="Surefire suite" finished-at="2024-05-15T17:23:37 IST" duration-ms="13661">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorvalidationTest.LoginErrorValidation()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" name="LoginErrorValidation" class="Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2024-04-02T00:25:26 IST" name="ErrorValidationTest(failed)(failed)" finished-at="2024-04-02T00:25:49 IST" duration-ms="23291">
+    <test started-at="2024-05-15T17:23:23 IST" name="Surefire test" finished-at="2024-05-15T17:23:37 IST" duration-ms="13661">
       <class name="Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:26 IST" name="launchapp" finished-at="2024-04-02T00:25:34 IST" duration-ms="8649" status="PASS">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:23 IST" name="launchapp" finished-at="2024-05-15T17:23:30 IST" duration-ms="6639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method signature="Producterrorvalidation()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:34 IST" name="Producterrorvalidation" finished-at="2024-04-02T00:25:49 IST" duration-ms="14482" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:30 IST" name="LoginErrorValidation" finished-at="2024-05-15T17:23:30 IST" duration-ms="812" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest.LoginErrorValidation(ErrorvalidationTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:30 IST" name="teardown" finished-at="2024-05-15T17:23:31 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:31 IST" name="launchapp" finished-at="2024-05-15T17:23:34 IST" duration-ms="3155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method signature="Producterrorvalidation()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:34 IST" name="Producterrorvalidation" finished-at="2024-05-15T17:23:36 IST" duration-ms="2693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Producterrorvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:49 IST" name="teardown" finished-at="2024-04-02T00:25:49 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@4278a03f]" started-at="2024-05-15T17:23:36 IST" name="teardown" finished-at="2024-05-15T17:23:37 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest -->
-    </test> <!-- ErrorValidationTest(failed)(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Suite]] -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
