@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-02T00:25:26 IST" name="Failed suite [Failed suite [Suite]]" finished-at="2024-04-02T00:25:49 IST" duration-ms="23291">
+    <groups>
+    </groups>
+    <test started-at="2024-04-02T00:25:26 IST" name="ErrorValidationTest(failed)(failed)" finished-at="2024-04-02T00:25:49 IST" duration-ms="23291">
+      <class name="Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:26 IST" name="launchapp" finished-at="2024-04-02T00:25:34 IST" duration-ms="8649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method signature="Producterrorvalidation()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:34 IST" name="Producterrorvalidation" finished-at="2024-04-02T00:25:49 IST" duration-ms="14482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Producterrorvalidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest@294425a7]" started-at="2024-04-02T00:25:49 IST" name="teardown" finished-at="2024-04-02T00:25:49 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Rahulshettyacademy.rahulshettyacademy.tests.ErrorvalidationTest -->
+    </test> <!-- ErrorValidationTest(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Suite]] -->
+</testng-results>
