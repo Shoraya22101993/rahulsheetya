@@ -34,6 +34,7 @@ public class StandAloneTest2 extends BaseTest{
 		
 		
 }
+    System.out.print("____________________________________________________________________________");
     @Test(dependsOnMethods={"Endtoendtest"})
     public void GotoOrderHistory() {
     	ProductCatlogue productcatlogue= landingpage.Loginapp("anshika@gmail.com","Iamking@000");
